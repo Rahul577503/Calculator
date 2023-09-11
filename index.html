@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalcNinja X</title>
+    <meta name="description" content="A unique and advanced calculator with a user-friendly interface.">
+    <meta name="keywords" content="calculator, advanced calculator, unique calculator">
+    <meta name="author" content="Rahul Maurya">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1 style="text-align:center">CalcNinja X</h1>
+        <div class="display">
+            <input type="text" id="input" value="" readonly>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="appendToInput('7')">7</button>
+            <button class="btn" onclick="appendToInput('8')">8</button>
+            <button class="btn" onclick="appendToInput('9')">9</button>
+            <button class="btn orange" onclick="appendToInput('+')">+</button>
+            <button class="btn" onclick="appendToInput('4')">4</button>
+            <button class="btn" onclick="appendToInput('5')">5</button>
+            <button class="btn" onclick="appendToInput('6')">6</button>
+            <button class="btn orange" onclick="appendToInput('-')">-</button>
+            <button class="btn" onclick="appendToInput('1')">1</button>
+            <button class="btn" onclick="appendToInput('2')">2</button>
+            <button class="btn" onclick="appendToInput('3')">3</button>
+            <button class="btn orange" onclick="appendToInput('*')">*</button>
+            <button class="btn" onclick="appendToInput('0')">0</button>
+            <button class="btn" onclick="appendToInput('.')">.</button>
+            <button class="btn" onclick="clearInput()">C</button>
+            <button class="btn orange" onclick="calculate()">=</button>
+            <button class="btn orange" onclick="appendToInput('/')">/</button>
+            <button class="btn" onclick="backspace()">⌫</button>
+            <button class="btn" onclick="toggleSign()">±</button>
+            <button class="btn" onclick="squareRoot()">√</button>
+            <button class="btn" onclick="appendToInput('(')">(</button>
+            <button class="btn" onclick="appendToInput(')')">)</button>
+        </div>
+        <div class="history">
+            <h3>History</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
